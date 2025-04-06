@@ -184,11 +184,11 @@ header{
 footer{
     padding: 0.6rem;
     padding-left: 0rem;
-    padding-right: 0;
+    padding-right: 0rem;
     border-radius: 3rem;
     background-color: var(--quintocolor);
     position: absolute;
-    top: 91.3%;
+    top: 91.5%;
     left: 9%;
     display: grid;
     grid-template-columns: repeat(4,5rem);
@@ -200,15 +200,28 @@ footer div{
     background-color: var(--Primercolor);
 }
 section{
-   margin-top: 15.5rem;
-   display: grid;
-   grid-template-columns: 12rem 12rem;
+    margin-top: 15.5rem;
+    display: grid;
+    grid-template-columns: 12rem 12rem;
+    height: 26rem;
+    overflow-x: hidden;
 }
 .producto-a img{
     width: 11rem;
     border-radius: 1rem;
 }
 .producto-b img{
+    width: 11rem;
+    height: 18rem;
+    border-radius: 1rem;
+}
+
+.producto-c img{
+    width: 11rem;
+    height: 18rem;
+    border-radius: 1rem;
+}
+.producto-d img{
     width: 11rem;
     height: 18rem;
     border-radius: 1rem;
