@@ -8,9 +8,6 @@
 *{ 
     font-family: "Encode Sans", sans-serif;
 }
-body {
-    overflow: hidden;
-}
 header{
     .div-imagen{
         margin-top: 1rem;
@@ -21,6 +18,28 @@ header{
         background-image: url(/img/paginainicio/producto2.png);
         background-size: cover;
         background-position-y: -2.9rem;
+        .atras{
+            position: relative;
+            top: 1%;
+            left: 2%;
+            width: 1.5rem;
+            padding: 0.6rem;
+            text-align: center;
+            font-size: 2.5rem;
+            border-radius: 100%;
+            border: 0.3px solid var(--Tercercolor);
+            color: var(--quintocolor);
+            background-color: var(--Cuartocolor);
+        }
+        .corazon{
+            width: 1.5rem;
+            position: relative;
+            top: 1%;
+            left: 68%;
+            padding: 0.6rem;
+            border-radius: 100%;
+            background-color: var(--quintocolor);
+        }
     }
     .grid-a{
         display: grid;
@@ -138,5 +157,8 @@ section p{
     margin-left: -3.3rem;
 }
 section del{
-    font-size: 0.8rem;
+    font-size: 0.75rem;
+}
+a{
+    text-decoration: none;
 }
