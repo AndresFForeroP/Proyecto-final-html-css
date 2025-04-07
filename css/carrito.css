@@ -5,16 +5,19 @@
     --Cuartocolor: #f2f2f2;
     --quintocolor: #121111;
 }
-*{
+*{ 
     font-family: "Encode Sans", sans-serif;
+}
+body {
+    overflow: hidden;
 }
 header{
     .div-imagen{
         margin-top: 1rem;
         border-radius: 1rem;
-        margin-left: 1rem;
-        width: 21.5rem;
-        height: 26.3rem;
+        margin-left: 2.2rem;
+        width: 19rem;
+        height: 23.2rem;
         background-image: url(/img/paginainicio/producto2.png);
         background-size: cover;
         background-position-y: -2.9rem;
@@ -30,15 +33,17 @@ header{
         }
     }
     .grid-iconos{
+        margin-top: -1.2rem;
         display: grid;
         grid-template-columns: 15rem 15rem;
         .iconos-talla{
             display: grid;
-            grid-template-columns: repeat(4,1.7rem);
+            grid-template-columns: repeat(4,2rem);
         }
         .colores{
+            max-width: 8rem;
             display: grid;
-            grid-template-columns: repeat(3,1rem);
+            grid-template-columns: repeat(3,2rem);
         }
     }
 }
@@ -63,6 +68,7 @@ header{
 }
 
 header p{
+    max-width: 23rem;
     margin-left: 1rem;
     color: var(--Segundocolor);
 }
@@ -74,6 +80,63 @@ hr{
     opacity: 20%;
 }
 .colores div:nth-child(1){
+    height: 2rem;
+    width: 2rem;
+    color: var(--Segundocolor);
+    text-align: center;
     border-radius: 100%;
     background-color: var(--Segundocolor);
+}
+.colores div:nth-child(2){
+    margin-left: 1rem;
+    height: 2rem;
+    width: 2rem;
+    color: var(--Primercolor);
+    text-align: center;
+    border-radius: 100%;
+    background-color: var(--Primercolor);
+}
+.colores div:nth-child(3){
+    margin-left: 2rem;
+    height: 2rem;
+    width: 2rem;
+    color: var(--quintocolor);
+    text-align: center;
+    border-radius: 100%;
+    background-color: var(--quintocolor);
+}
+.iconos-talla div{
+    margin: auto;
+    border-radius: 100%;
+    border: 0.4px solid var(--Tercercolor);
+}
+.iconos-talla p{
+    width: 1rem;
+    padding: 0.1rem;
+    text-align: center;
+    margin: 0.2rem;
+}
+.grid-iconos h3{
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
+}
+section{
+    max-width: 23rem;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    display: grid;
+    grid-template-columns: 10rem 25rem;
+    color: var(--Cuartocolor);
+    background-color: var(--Primercolor);
+}
+section img{
+    margin: auto;
+    margin-left: 4.5rem;
+}
+section p{
+    max-width: 14rem;
+    margin-left: -3.3rem;
+}
+section del{
+    font-size: 0.8rem;
 }
