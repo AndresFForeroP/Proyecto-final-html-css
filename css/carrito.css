@@ -8,3 +8,72 @@
 *{
     font-family: "Encode Sans", sans-serif;
 }
+header{
+    .div-imagen{
+        margin-top: 1rem;
+        border-radius: 1rem;
+        margin-left: 1rem;
+        width: 21.5rem;
+        height: 26.3rem;
+        background-image: url(/img/paginainicio/producto2.png);
+        background-size: cover;
+        background-position-y: -2.9rem;
+    }
+    .grid-a{
+        display: grid;
+        margin-bottom: -0.7rem;
+        grid-template-columns: 14rem 3rem;
+        .grid-mas{
+            margin-left: 2.4rem;
+            display: grid;
+            grid-template-columns: 2rem 2rem 2rem;
+        }
+    }
+    .grid-iconos{
+        display: grid;
+        grid-template-columns: 15rem 15rem;
+        .iconos-talla{
+            display: grid;
+            grid-template-columns: repeat(4,1.7rem);
+        }
+        .colores{
+            display: grid;
+            grid-template-columns: repeat(3,1rem);
+        }
+    }
+}
+.grid-a h1{
+    margin-left: 1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: -0.5rem;
+}
+.grid-mas img{
+    border: 0.2px solid var(--Tercercolor);
+    width: 1.2rem;
+    margin-top: 2rem;
+    border-radius: 100%;
+    padding: 0.4rem;
+}
+.grid-mas h3{
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top: 2.25rem;
+    margin-left: 0.85rem;
+}
+
+header p{
+    margin-left: 1rem;
+    color: var(--Segundocolor);
+}
+.leer-mas{
+    color: var(--quintocolor);
+    font-weight: 600;
+}
+hr{
+    opacity: 20%;
+}
+.colores div:nth-child(1){
+    border-radius: 100%;
+    background-color: var(--Segundocolor);
+}
