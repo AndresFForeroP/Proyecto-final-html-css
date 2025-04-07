@@ -1,0 +1,10 @@
+:root{
+    --Primercolor: #292526;
+    --Segundocolor: #787676;
+    --Tercercolor: #a3a1a2;
+    --Cuartocolor: #f2f2f2;
+    --quintocolor: #121111;
+}
+*{
+    font-family: "Encode Sans", sans-serif;
+}

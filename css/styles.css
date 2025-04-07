@@ -226,3 +226,19 @@ section{
     height: 18rem;
     border-radius: 1rem;
 }
+section p{
+    color: var(--quintocolor);
+    margin-top: -1rem;
+    font-size: 0.8rem;
+}
+section h3{
+    color: var(--quintocolor);
+    font-size: 1.1rem;
+}
+section span{
+    margin-left: 3.5rem;
+    font-weight: 300;
+}
+a{
+    text-decoration: none;
+}
