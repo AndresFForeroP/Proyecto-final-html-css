@@ -5,6 +5,287 @@
     --Cuartocolor: #f2f2f2;
     --quintocolor: #121111;
 }
+
 *{ 
     font-family: "Encode Sans", sans-serif;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 2rem 19rem 2rem;
+}
+
+header .boton-atras{
+    padding: 0.4rem;
+    margin: auto;
+    border-radius: 100%;
+    border: 0.5px solid var(--Tercercolor);
+}
+
+header .boton-menu{
+    padding: 0.4rem;
+    margin: auto;
+    border-radius: 100%;
+    border: 0.5px solid var(--Tercercolor);
+}
+
+header h1{
+    margin-left: 7rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+section .producto-a{
+    margin-top: -1rem;
+    display: grid;
+    grid-template-columns: 5rem 14rem 4rem;
+}
+
+section .producto-b{
+    margin-top: -1rem;
+    display: grid;
+    grid-template-columns: 5rem 14rem 4rem;
+}
+
+.productos{
+    margin-top: 2rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+}
+
+.producto-a h1{
+    margin-left: 1rem;
+    margin-top: 2rem;
+    margin-bottom: -1.8rem;
+    font-size: 1rem;
+}
+
+.producto-a p{
+    margin-left: 1rem;
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: var(--Segundocolor);
+}
+
+.producto-a h3{
+    margin-left: 1rem;
+}
+
+.cantidad{
+    display: grid;
+    grid-template-columns: 4rem 4rem 4rem;
+    margin-left: -2rem;
+}
+
+.puntos{
+    margin-top: 1.3rem;
+    margin-left: 2rem;
+    font-size: 1.4rem;
+}
+
+.cantidad h2{
+    margin-top: 0.1rem;
+    margin-left: -2rem;
+    margin-right: 0rem;
+    font-size: 1rem;
+}
+
+.menos{
+    width: 1.6rem;
+    background-color: var(--Cuartocolor);
+    border: 0.5px solid var(--Segundocolor);
+    border-radius: 100%;
+    margin-left: -1rem;
+}
+
+.mas{
+    width: 1.6rem;
+    background-color: var(--Cuartocolor);
+    border: 0.5px solid var(--Segundocolor);
+    border-radius: 100%;
+    margin-left: -4rem;
+}
+
+.producto-b h1{
+    margin-left: 1rem;
+    margin-top: 2rem;
+    margin-bottom: -1.8rem;
+    font-size: 1rem;
+}
+
+.producto-b p{
+    margin-left: 1rem;
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: var(--Segundocolor);
+}
+
+.producto-b h3{
+    margin-left: 1rem;
+}
+
+.informacion{
+    font-size: 1.2rem;
+}
+
+hr{
+    opacity: 30%;
+}
+
+.informacionpago{
+    border-radius: 1rem;
+    margin-left: 1.8rem;
+    padding: 1rem;
+    width: 19rem;
+    height: 2rem;
+    background-color: var(--Cuartocolor);
+    display: grid;
+    grid-template-columns: 3rem 14rem 3rem;
+}
+
+.informacionpago p{
+    margin-left: 1rem;
+    margin-top: 0.1rem;
+}
+
+.abajo{
+    padding: 0.3rem;
+    background-color: var(--Cuartocolor);
+    border-radius: 100%;
+}
+
+.pagos-a{
+    display: grid;
+    grid-template-columns: 17rem 17rem;
+}
+
+.negrilla{
+    margin-left: 1.3rem;
+    font-weight: 600;
+}
+
+.espacio{
+    margin-left: 1.6rem;
+}
+
+.pagos-b{
+    display: grid;
+    grid-template-columns: 17rem 10rem;
+}
+
+footer{
+    padding: 1rem;
+    text-align: center;
+    border-radius: 2rem;
+    background-color: var(--Primercolor);
+    color: var(--Cuartocolor);
+}
+
+a{
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    header {
+        grid-template-columns: 3rem 1fr 3rem;
+        padding: 1rem 0;
+    }
+
+    header h1 {
+        margin-left: 0;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    section .producto-a,
+    section .producto-b {
+        grid-template-columns: 7rem 1fr 6rem;
+        margin-top: 1rem;
+    }
+
+    .productos {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .producto-a h1,
+    .producto-b h1 {
+        font-size: 1.2rem;
+        margin-top: 1.5rem;
+    }
+
+    .producto-a p,
+    .producto-b p {
+        font-size: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .cantidad {
+        grid-template-columns: 3rem 3rem 3rem;
+        margin-left: 0;
+    }
+
+    .menos,
+    .mas {
+        width: 2rem;
+        height: 2rem;
+        margin-left: 0;
+    }
+
+    .puntos {
+        margin-left: 1rem;
+    }
+
+    .informacionpago {
+        width: 100%;
+        max-width: 600px;
+        margin: 2rem auto;
+        grid-template-columns: 4rem 1fr 4rem;
+    }
+
+    .pagos-a,
+    .pagos-b {
+        grid-template-columns: 1fr 1fr;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .negrilla,
+    .espacio {
+        margin-left: 2rem;
+    }
+
+    footer {
+        max-width: 600px;
+        margin: 2rem auto;
+        padding: 1.5rem;
+    }
+
+    @media screen and (min-width: 1024px) {
+        section {
+            grid-template-columns: 1fr;
+        }
+
+        .informacionpago {
+            max-width: 800px;
+        }
+
+        .pagos-a,
+        .pagos-b {
+            max-width: 800px;
+        }
+    }
 }

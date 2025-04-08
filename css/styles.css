@@ -4,11 +4,12 @@
     --Tercercolor: #a3a1a2;
     --Cuartocolor: #f2f2f2;
     --quintocolor: #121111;
-
 }
+
 *{
     font-family: "Encode Sans", sans-serif;
 }
+
 .foto-perfil{
     padding: 0.4rem;
     background-color: var(--Primercolor);
@@ -16,7 +17,8 @@
     margin-top: 1.4rem;
     width: 2.5rem;
 }
-.barra-busqueda-div  {
+
+.barra-busqueda-div {
     margin-left: 0.9rem;
     border: 1px solid var(--Tercercolor);
     background-color: white;
@@ -25,13 +27,14 @@
     max-width: 22rem;
     height: fit-content;
     width: 100%;
-    box-shadow: rgb(149, 157, 165,0.2)
-        0px 8px 24px;
+    box-shadow: rgb(149, 157, 165,0.2) 0px 8px 24px;
 }
+
 .row {
     display: flex;
     align-items: center;
 }
+
 input {
     flex: 1;
     max-height: 2.5rem;
@@ -69,118 +72,137 @@ input {
     background: #f6f6f6;
     border-radius: 0.25rem;
 }
+
 header{
     position: absolute;
     top: 0%;
-    .div-busquedayfiltro{
-        display: grid;
-        grid-template-columns: 15rem 5rem;
-        .botonfiltro {
-            background-color: var(--Primercolor);
-            width: 3.5rem;
-            height: 3.5rem;
-            border-radius: 20%;
-            margin-left: 4.1rem;
-            .filtro {
-                padding: 0.7rem;
-                width: 2rem;
-            }
-        }
-    }
-    .usuario {
-        margin-left: 0.8rem;
-        display: grid;
-        grid-template-columns: 18.5rem 2rem;
-        .nombre-usuario {
-            margin-top: -0.3rem;
-            font-size: 1.3rem;
-            font-weight: 900;
-        }
-    }
-    .div-filtro-tipo {
-        width: 21rem;
-        overflow-y: hidden;
-        margin-left: 0.9rem;
-        margin-top: 2rem;
-        display: grid;
-         grid-template-columns: repeat(4,8rem);
-        .todos {
-            height: 2.7rem;
-            margin-right: 1rem;
-            display: grid;
-            grid-template-columns: repeat(2,3rem);
-            border: 0.7px solid var(--Tercercolor);
-            border-radius: 0.7rem;
-            
-        }
-        .vestidos {
-            height: 2.7rem;
-            width: 8rem;
-            margin-right: 1rem;
-            display: grid;
-            grid-template-columns: repeat(2,3rem);
-            border: 0.7px solid var(--Tercercolor);
-            border-radius: 0.7rem
-        }
-        .camisetas {
-            height: 2.7rem;
-            width: 8.5rem;
-            margin-left: 1rem;
-            margin-right: 1rem;
-            display: grid;
-            grid-template-columns: repeat(2,3rem);
-            border: 0.7px solid var(--Tercercolor);
-            border-radius: 0.7rem;
-        }
-        .pantalones{
-            height: 2.7rem;
-            width: 9rem;
-            margin-left: 2.5rem;
-            margin-right: 1rem;
-            display: grid;
-            grid-template-columns: repeat(2,3rem);
-            border: 0.7px solid var(--Tercercolor);
-            border-radius: 0.7rem;
-        }
-
-    }
 }
+
+header .div-busquedayfiltro{
+    display: grid;
+    grid-template-columns: 15rem 5rem;
+}
+
+header .div-busquedayfiltro .botonfiltro {
+    background-color: var(--Primercolor);
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 20%;
+    margin-left: 4.1rem;
+}
+
+header .div-busquedayfiltro .botonfiltro .filtro {
+    padding: 0.7rem;
+    width: 2rem;
+}
+
+header .usuario {
+    margin-left: 0.8rem;
+    display: grid;
+    grid-template-columns: 18.5rem 2rem;
+}
+
+header .usuario .nombre-usuario {
+    margin-top: -0.3rem;
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+header .div-filtro-tipo {
+    width: 21rem;
+    overflow-y: hidden;
+    margin-left: 0.9rem;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4,8rem);
+}
+
+header .div-filtro-tipo .todos {
+    height: 2.7rem;
+    margin-right: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2,3rem);
+    border: 0.7px solid var(--Tercercolor);
+    border-radius: 0.7rem;
+}
+
+header .div-filtro-tipo .vestidos {
+    height: 2.7rem;
+    width: 8rem;
+    margin-right: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2,3rem);
+    border: 0.7px solid var(--Tercercolor);
+    border-radius: 0.7rem;
+}
+
+header .div-filtro-tipo .camisetas {
+    height: 2.7rem;
+    width: 8.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2,3rem);
+    border: 0.7px solid var(--Tercercolor);
+    border-radius: 0.7rem;
+}
+
+header .div-filtro-tipo .pantalones{
+    height: 2.7rem;
+    width: 9rem;
+    margin-left: 2.5rem;
+    margin-right: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2,3rem);
+    border: 0.7px solid var(--Tercercolor);
+    border-radius: 0.7rem;
+}
+
 .div-filtro-tipo .vestidos img{
     padding: 0.5rem;
     width: 1.7rem;
 }
+
 .div-filtro-tipo .todos img{
     padding: 0.6rem;
     width: 1.5rem;
 }
+
 .div-filtro-tipo .camisetas img{
     padding: 0.6rem;
     width: 1.7rem;
 }
+
 .div-filtro-tipo .pantalones img{
     padding: 0.6rem;
     width: 1.7rem;
 }
+
 .div-filtro-tipo p{
     margin: auto;
     font-weight: 500;
 }
+
 .todos:hover{
     background-color: var(--Tercercolor);
     color: var(--Cuartocolor);
 }
+
 .vestidos:hover{
     background-color: var(--Tercercolor);
     color: var(--Cuartocolor);
 }
+
 .camisetas:hover{
     background-color: var(--Tercercolor);
     color: var(--Cuartocolor);
 }
+
 .pantalones:hover{
     background-color: var(--Tercercolor);
     color: var(--Cuartocolor);
 }
+
 footer{
     padding: 0.6rem;
     padding-left: 0rem;
@@ -193,12 +215,14 @@ footer{
     display: grid;
     grid-template-columns: repeat(4,5rem);
 }
+
 footer div{
     margin: auto;
     padding: 0.45rem;
     border-radius: 100%;
     background-color: var(--Primercolor);
 }
+
 section{
     margin-top: 15.5rem;
     display: grid;
@@ -206,10 +230,12 @@ section{
     height: 26rem;
     overflow-x: hidden;
 }
+
 .producto-a img{
     width: 11rem;
     border-radius: 1rem;
 }
+
 .producto-b img{
     width: 11rem;
     height: 18rem;
@@ -221,24 +247,88 @@ section{
     height: 18rem;
     border-radius: 1rem;
 }
+
 .producto-d img{
     width: 11rem;
     height: 18rem;
     border-radius: 1rem;
 }
+
 section p{
     color: var(--quintocolor);
     margin-top: -1rem;
     font-size: 0.8rem;
 }
+
 section h3{
     color: var(--quintocolor);
     font-size: 1.1rem;
 }
+
 section span{
     margin-left: 3.5rem;
     font-weight: 300;
 }
+
 a{
     text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    header .div-busquedayfiltro {
+        grid-template-columns: 1fr auto;
+        max-width: 800px;
+    }
+
+    header .div-filtro-tipo {
+        width: 100%;
+        max-width: 800px;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+
+    header .div-filtro-tipo .todos,
+    header .div-filtro-tipo .vestidos,
+    header .div-filtro-tipo .camisetas,
+    header .div-filtro-tipo .pantalones {
+        width: auto;
+        margin: 0;
+    }
+
+    section {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 15.5rem auto 0;
+        padding: 0 2rem;
+    }
+
+    .producto-a img,
+    .producto-b img,
+    .producto-c img,
+    .producto-d img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+
+    footer {
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
+        min-width: 300px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        section {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
 }

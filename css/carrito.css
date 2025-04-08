@@ -1,164 +1,305 @@
-:root{
+:root {
     --Primercolor: #292526;
     --Segundocolor: #787676;
     --Tercercolor: #a3a1a2;
     --Cuartocolor: #f2f2f2;
     --quintocolor: #121111;
 }
-*{ 
+
+* {
     font-family: "Encode Sans", sans-serif;
-}
-header{
-    .div-imagen{
-        margin-top: 1rem;
-        border-radius: 1rem;
-        margin-left: 2.2rem;
-        width: 19rem;
-        height: 23.2rem;
-        background-image: url(/img/paginainicio/producto2.png);
-        background-size: cover;
-        background-position-y: -2.9rem;
-        .atras{
-            position: relative;
-            top: 1%;
-            left: 2%;
-            width: 1.5rem;
-            padding: 0.6rem;
-            text-align: center;
-            font-size: 2.5rem;
-            border-radius: 100%;
-            border: 0.3px solid var(--Tercercolor);
-            color: var(--quintocolor);
-            background-color: var(--Cuartocolor);
-        }
-        .corazon{
-            width: 1.5rem;
-            position: relative;
-            top: 1%;
-            left: 68%;
-            padding: 0.6rem;
-            border-radius: 100%;
-            background-color: var(--quintocolor);
-        }
-    }
-    .grid-a{
-        display: grid;
-        margin-bottom: -0.7rem;
-        grid-template-columns: 14rem 3rem;
-        .grid-mas{
-            margin-left: 2.4rem;
-            display: grid;
-            grid-template-columns: 2rem 2rem 2rem;
-        }
-    }
-    .grid-iconos{
-        margin-top: -1.2rem;
-        display: grid;
-        grid-template-columns: 15rem 15rem;
-        .iconos-talla{
-            display: grid;
-            grid-template-columns: repeat(4,2rem);
-        }
-        .colores{
-            max-width: 8rem;
-            display: grid;
-            grid-template-columns: repeat(3,2rem);
-        }
-    }
-}
-.grid-a h1{
-    margin-left: 1rem;
-    font-size: 1.6rem;
-    font-weight: 600;
-    margin-bottom: -0.5rem;
-}
-.grid-mas img{
-    border: 0.2px solid var(--Tercercolor);
-    width: 1.2rem;
-    margin-top: 2rem;
-    border-radius: 100%;
-    padding: 0.4rem;
-}
-.grid-mas h3{
-    font-weight: 700;
-    font-size: 1.2rem;
-    margin-top: 2.25rem;
-    margin-left: 0.85rem;
+    box-sizing: border-box;
 }
 
-header p{
-    max-width: 23rem;
-    margin-left: 1rem;
-    color: var(--Segundocolor);
+header .div-imagen {
+    margin-top: 1rem;
+    border-radius: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 19rem;
+    height: 23.2rem;
+    background-image: url(/img/paginainicio/producto2.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
-.leer-mas{
+
+header .div-imagen .atras {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.6rem;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 100%;
+    border: 0.3px solid var(--Tercercolor);
+    color: var(--quintocolor);
+    background-color: var(--Cuartocolor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .div-imagen .corazon {
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.6rem;
+    border-radius: 100%;
+    background-color: var(--quintocolor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .grid-a {
+    display: grid;
+    margin: 1rem auto;
+    max-width: 23rem;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+}
+
+header .grid-a h1 {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+header .grid-mas {
+    display: grid;
+    grid-template-columns: repeat(3, 2rem);
+    gap: 0.5rem;
+    align-items: center;
+}
+
+header .grid-mas img {
+    border: 0.2px solid var(--Tercercolor);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    padding: 0.4rem;
+    object-fit: contain;
+}
+
+header .grid-mas h3 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0;
+}
+
+header p {
+    max-width: 23rem;
+    margin: 1rem auto;
+    color: var(--Segundocolor);
+    line-height: 1.4;
+}
+
+.leer-mas {
     color: var(--quintocolor);
     font-weight: 600;
 }
-hr{
+
+hr {
     opacity: 20%;
+    margin: 1.5rem auto;
+    max-width: 23rem;
 }
-.colores div:nth-child(1){
-    height: 2rem;
-    width: 2rem;
-    color: var(--Segundocolor);
-    text-align: center;
-    border-radius: 100%;
-    background-color: var(--Segundocolor);
+
+header .grid-iconos {
+    margin: 2rem auto;
+    max-width: 23rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
 }
-.colores div:nth-child(2){
-    margin-left: 1rem;
-    height: 2rem;
-    width: 2rem;
-    color: var(--Primercolor);
-    text-align: center;
-    border-radius: 100%;
-    background-color: var(--Primercolor);
-}
-.colores div:nth-child(3){
-    margin-left: 2rem;
-    height: 2rem;
-    width: 2rem;
-    color: var(--quintocolor);
-    text-align: center;
-    border-radius: 100%;
-    background-color: var(--quintocolor);
-}
-.iconos-talla div{
-    margin: auto;
-    border-radius: 100%;
-    border: 0.4px solid var(--Tercercolor);
-}
-.iconos-talla p{
-    width: 1rem;
-    padding: 0.1rem;
-    text-align: center;
-    margin: 0.2rem;
-}
-.grid-iconos h3{
+
+header .grid-iconos h3 {
     font-size: 1rem;
     margin-bottom: 0.6rem;
 }
-section{
+
+header .iconos-talla {
+    display: grid;
+    grid-template-columns: repeat(4, 2.5rem);
+    gap: 0.5rem;
+}
+
+header .iconos-talla div {
+    border-radius: 100%;
+    border: 0.4px solid var(--Tercercolor);
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .colores {
+    display: grid;
+    grid-template-columns: repeat(3, 2.5rem);
+    gap: 1rem;
+}
+
+header .colores div {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 100%;
+}
+
+section {
     max-width: 23rem;
-    margin-top: 2rem;
+    margin: 2rem auto;
     border-radius: 2rem;
     display: grid;
-    grid-template-columns: 10rem 25rem;
+    grid-template-columns: auto 1fr;
     color: var(--Cuartocolor);
     background-color: var(--Primercolor);
+    padding: 1.5rem;
+    gap: 1rem;
 }
-section img{
-    margin: auto;
-    margin-left: 4.5rem;
+
+section img {
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
 }
-section p{
-    max-width: 14rem;
-    margin-left: -3.3rem;
+
+section p {
+    margin: 0;
+    max-width: 100%;
 }
-section del{
+
+section del {
     font-size: 0.75rem;
+    opacity: 0.7;
 }
-a{
+
+a {
     text-decoration: none;
+    color: inherit;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: start;
+    }
+
+    header .div-imagen {
+        width: 100%;
+        max-width: 30rem;
+        height: 35rem;
+        margin: 0;
+        position: sticky;
+        top: 2rem;
+    }
+
+    header .product-info {
+        padding-top: 2rem;
+    }
+
+    header .grid-a {
+        max-width: 100%;
+        margin: 0 0 1.5rem 0;
+    }
+
+    header .grid-a h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        max-width: 100%;
+        font-size: 1.1rem;
+    }
+
+    header .grid-iconos {
+        max-width: 100%;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+
+    header .iconos-talla {
+        grid-template-columns: repeat(4, 3rem);
+    }
+
+    header .iconos-talla div {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    header .colores {
+        grid-template-columns: repeat(3, 3rem);
+    }
+
+    header .colores div {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    section {
+        max-width: 40rem;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    section img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    section p {
+        font-size: 1.1rem;
+    }
+
+    .grid-mas img:hover,
+    .iconos-talla div:hover,
+    .colores div:hover {
+        transform: scale(1.1);
+        transition: transform 0.2s ease;
+    }
+
+    .atras:hover,
+    .corazon:hover {
+        opacity: 0.9;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        padding: 3rem;
+    }
+
+    header {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+
+    header .div-imagen {
+        max-width: 35rem;
+        height: 40rem;
+    }
+
+    header .grid-a h1 {
+        font-size: 2.2rem;
+    }
+
+    section {
+        max-width: 50rem;
+    }
 }
